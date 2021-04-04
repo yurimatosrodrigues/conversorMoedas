@@ -5,8 +5,8 @@ void main() {
   runApp(MaterialApp(
     home: Home(),
     theme: ThemeData(
-      hintColor: Colors.amber,
-      primaryColor: Colors.amber,
+      //hintColor: Colors.black,
+      primaryColor: Colors.blue,
     ),
 
   ));

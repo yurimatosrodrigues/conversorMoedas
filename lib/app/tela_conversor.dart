@@ -41,13 +41,13 @@ class _HomeState extends State<Home> {
     }
 
     return Scaffold(
-      //backgroundColor: Colors.black,
+      backgroundColor: Colors.black,
       appBar: AppBar(
                 title: Text("Conversor de moedas",
-                          style: TextStyle(color: Colors.black,
+                          style: TextStyle(color: Colors.white,
                                             fontSize: 25.00)
                             ),
-                backgroundColor: Colors.amber,
+                backgroundColor: Colors.black,
                 centerTitle: true),
       body: FutureBuilder<Map>(
               future: getDados(),
@@ -85,13 +85,13 @@ class _HomeState extends State<Home> {
                               ),
                               TextField(
                                 controller: realController,
-                                cursorColor: Colors.amber,
+                                cursorColor: Colors.green,
                                 decoration: InputDecoration(
                                   labelText: "Reais",
-                                  labelStyle: TextStyle(color: Colors.amber),
+                                  labelStyle: TextStyle(color: Colors.white),
                                   border: OutlineInputBorder(),
                                   prefixText: "R\$",),
-                                style: TextStyle(color: Colors.amber,
+                                style: TextStyle(color: Colors.green,
                                                  fontSize:25.00),
                                 onChanged: _realChanged,
                                 keyboardType: TextInputType.numberWithOptions(decimal:true),
@@ -99,13 +99,13 @@ class _HomeState extends State<Home> {
                               Divider(),
                               TextField(
                                   controller: dolarController,
-                                  cursorColor: Colors.amber,
+                                  cursorColor: Colors.green,
                                   decoration: InputDecoration(
                                     labelText: "Dólar",
-                                    labelStyle: TextStyle(color: Colors.amber),
+                                    labelStyle: TextStyle(color: Colors.white),
                                     border: OutlineInputBorder(),
                                     prefixText: "US\$",),
-                                  style: TextStyle(color: Colors.amber,
+                                  style: TextStyle(color: Colors.green,
                                       fontSize:25.00),
                                 onChanged: _dolarChanged,
                                 keyboardType: TextInputType.numberWithOptions(decimal:true),
@@ -113,13 +113,13 @@ class _HomeState extends State<Home> {
                               Divider(),
                               TextField(
                                   controller: euroController,
-                                  cursorColor: Colors.amber,
+                                  cursorColor: Colors.green,
                                   decoration: InputDecoration(
                                     labelText: "Euro",
-                                    labelStyle: TextStyle(color: Colors.amber),
+                                    labelStyle: TextStyle(color: Colors.white),
                                     border: OutlineInputBorder(),
                                     prefixText: "€\$",),
-                                  style: TextStyle(color: Colors.amber,
+                                  style: TextStyle(color: Colors.green,
                                       fontSize:25.00),
                                 onChanged: _euroChanged,
                                 keyboardType: TextInputType.numberWithOptions(decimal:true),
